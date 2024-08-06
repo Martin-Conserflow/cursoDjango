@@ -1,3 +1,6 @@
+{% extends "base.html" %}
+
+{% block content %}
 {{post.title}}
 <br />
 {{post.excerpt}}
@@ -7,4 +10,7 @@
 <a href="{% url 'blog:home' %}">
     <button type="submit" , href="{% url 'blog:home' %}">Inicio</button>
 </a>
+{% endblock content %}
+ 
+
 

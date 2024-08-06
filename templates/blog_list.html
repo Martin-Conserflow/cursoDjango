@@ -1,3 +1,7 @@
+{% extends "base.html" %}
+
+{% block content %}
+
 bloglist
 <br>
 {% for post in posts %}
@@ -8,3 +12,6 @@ bloglist
 
 <br>
 <a href="{% url 'blog:create' %}">Create</a>
+
+{% endblock content %}
+
